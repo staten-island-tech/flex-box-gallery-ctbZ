@@ -5,7 +5,34 @@ html, body, * {
     font-size: 62.5%;
 }
 body {
-    background: linear-gradient(rgb(198, 132, 236), rgb(106, 197, 250));
+    background: linear-gradient(rgb(238, 156, 255), rgb(106, 197, 250));
+}
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10rem;
+    line-height: 85rem;
+    letter-spacing: 1rem;
+    padding-top: 5rem;
+    background-image: url(imgs/bayc.jpg);
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 95rem;
+    
+    height: 95rem;
+    color: #fff;
+    text-shadow: 
+    0 0 1rem rgb(192, 185, 185), 
+    0 0 1.5rem rgb(214, 205, 205),
+    0 0 2rem rgb(119, 247, 208), 
+    0 0 3rem rgb(98, 213, 248), 
+    0 0 4rem rgb(0, 217, 255),
+    0 0 5rem rgb(134, 144, 151), 
+    0 0 5rem rgb(52, 195, 252), 
+    0 0 6rem #0fa;
 }
 .flex-container {
    width: 100%;
@@ -25,6 +52,7 @@ body {
     font-size: 5rem;
     line-height: 3rem;
     border-radius: 2.2rem;
+    box-shadow: 0rem 0.5rem 2rem 0 rgb(171, 238, 255);
 }
 #img {
     width: 40rem;
