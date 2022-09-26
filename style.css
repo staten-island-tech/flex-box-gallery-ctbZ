@@ -17,11 +17,9 @@ h1 {
     background-image: url(imgs/bayc.jpg);
     background-position: center;
     background-size: cover;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 95rem;
-    
     height: 95rem;
     color: #fff;
     text-shadow: 
@@ -64,14 +62,25 @@ h1 {
     width: 1.5rem;
     margin-left: 2.7rem;
 }
+#card-1, #card-2, #card-3 {
+    box-shadow: 0rem 0.5rem 2rem 0 rgb(255, 216, 252);
+}
+#card-4, #card-5, #card-6 {
+    box-shadow: 0rem 0.5rem 2rem 0 rgb(244, 229, 255);
+}
+#card-7, #card-8, #card-9 {
+    box-shadow: 0rem 0.5rem 2rem 0 rgb(215, 249, 255);
+}
 span {
     font-size: 3rem;
     color: rgb(53, 56, 64);
+    text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
 }
 h2 {
     text-align: left;
     margin: 2rem 0 2rem 2rem;
     font-size: 2.5rem;
+    text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
 }
 h3 {
     text-align: left;
@@ -79,4 +88,5 @@ h3 {
     font-size: 2rem;
     font-weight: 400;
     color: rgb(68, 68, 68);
+    text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
 }
