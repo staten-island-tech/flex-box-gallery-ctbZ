@@ -4,6 +4,51 @@ html, body, * {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+body {
+    background: linear-gradient(rgb(198, 132, 236), rgb(106, 197, 250));
+}
 .flex-container {
-    display: flex;
+   width: 100%;
+   height: auto;
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   font-family: 'Poppins', sans-serif;
+}
+.flex-box{
+    width: 40rem;
+    height: 60rem;
+    margin: 5rem;
+    background: white;
+    color: black;
+    font-size: 5rem;
+    line-height: 3rem;
+    border-radius: 2.2rem;
+}
+#img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 2rem;
+
+}
+#logo {
+    width: 1.5rem;
+    margin-left: 2.7rem;
+}
+span {
+    font-size: 3rem;
+    color: rgb(53, 56, 64);
+}
+h2 {
+    text-align: left;
+    margin: 2rem 0 2rem 2rem;
+    font-size: 2.5rem;
+}
+h3 {
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
 }
