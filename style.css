@@ -8,6 +8,11 @@ body {
     background: linear-gradient(rgb(255, 156, 230), rgb(106, 197, 250));
     text-align: center;
 }
+@media screen and (min-width: 601px) {
+    h1 {
+      font-size: 80px;
+    }
+  }
 h1 {
     display:inline-block;
     font-family: 'Press Start 2P', cursive;
@@ -42,14 +47,14 @@ section {
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   font-family: 'Poppins', sans-serif;
-   
+   font-family: 'Poppins', sans-serif; 
 }
 .flex-box{
     width: 40rem;
     height: 60rem;
     margin: 5rem;
     background: white;
+    text-align: left;
     color: black;
     font-size: 5rem;
     line-height: 3rem;
@@ -60,7 +65,7 @@ section {
     width: 40rem;
     height: 40rem;
     border-radius: 2rem;
-
+    object-fit: contain;
 }
 #logo {
     width: 1.5rem;
@@ -94,17 +99,28 @@ h3 {
     color: rgb(68, 68, 68);
     text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
 }
+/* CSS Animations */
+.flex-box:hover {
+    transform: scale(1.15);
+  }
+
 /* JS Animations */
 h1 {
     opacity: 0;
-    /* filter: blur(0.5rem); */
-    position:relative;
-    bottom: -4rem;
-    transition: all 0.8s ease-out;
+    filter: blur(0.5rem);
+    transform: translatey(10%);
+    transition: all 1s ease-out;
 }
 .show {
     opacity: 1;
     bottom: 0;
-    /* filter: blur(0); */
-    /* transform: translateX(0); */
+    filter: blur(0);
+    transform: translateX(0);
 }
+/* opacity: 0;
+   position:relative;
+   bottom:4rem
+   ->
+   opacity:1;
+   bottom:0;
+*/

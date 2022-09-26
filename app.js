@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', setup)
-
 function setup() {
     const options= {
         rootMargin: '0%'
@@ -20,7 +19,7 @@ function setup() {
     observer.observe(h1);
 }
 
-
+// make it so that when h1 targets leaves observer sight, then the flexbox cards stagger and fade in
 
 
 
