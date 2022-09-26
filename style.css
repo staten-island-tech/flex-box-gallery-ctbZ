@@ -5,22 +5,15 @@ html, body, * {
     font-size: 62.5%;
 }
 body {
-    background: linear-gradient(rgb(238, 156, 255), rgb(106, 197, 250));
+    background: linear-gradient(rgb(255, 156, 230), rgb(106, 197, 250));
+    text-align: center;
 }
 h1 {
-    text-align: center;
+    display:inline-block;
     font-family: 'Press Start 2P', cursive;
     font-size: 10rem;
-    line-height: 85rem;
+    line-height: 90rem;
     letter-spacing: 1rem;
-    padding-top: 5rem;
-    background-image: url(imgs/bayc.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 95rem;
-    height: 95rem;
     color: #fff;
     text-shadow: 
     0 0 1rem rgb(192, 185, 185), 
@@ -32,6 +25,16 @@ h1 {
     0 0 5rem rgb(52, 195, 252), 
     0 0 6rem #0fa;
 }
+section {
+    background-image: url(imgs/bayc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100rem;
+    height: 100rem;
+    
+}
 .flex-container {
    width: 100%;
    height: auto;
@@ -40,6 +43,7 @@ h1 {
    flex-wrap: wrap;
    justify-content: center;
    font-family: 'Poppins', sans-serif;
+   
 }
 .flex-box{
     width: 40rem;
@@ -63,13 +67,13 @@ h1 {
     margin-left: 2.7rem;
 }
 #card-1, #card-2, #card-3 {
-    box-shadow: 0rem 0.5rem 2rem 0 rgb(255, 216, 252);
+    box-shadow: 0 0 3rem 1rem rgb(255, 228, 254);
 }
 #card-4, #card-5, #card-6 {
-    box-shadow: 0rem 0.5rem 2rem 0 rgb(244, 229, 255);
+    box-shadow: 0 0 3rem 1rem rgb(237, 224, 255);
 }
 #card-7, #card-8, #card-9 {
-    box-shadow: 0rem 0.5rem 2rem 0 rgb(215, 249, 255);
+    box-shadow: 0 0 3rem 1rem rgb(230, 251, 255);
 }
 span {
     font-size: 3rem;
@@ -89,4 +93,18 @@ h3 {
     font-weight: 400;
     color: rgb(68, 68, 68);
     text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
+}
+/* JS Animations */
+h1 {
+    opacity: 0;
+    /* filter: blur(0.5rem); */
+    position:relative;
+    bottom: -4rem;
+    transition: all 0.8s ease-out;
+}
+.show {
+    opacity: 1;
+    bottom: 0;
+    /* filter: blur(0); */
+    /* transform: translateX(0); */
 }
