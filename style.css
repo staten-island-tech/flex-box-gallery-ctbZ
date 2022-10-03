@@ -5,7 +5,9 @@ html, body, * {
     font-size: 62.5%;
 }
 body {
-    background: linear-gradient(rgb(255, 156, 230), rgb(106, 197, 250));
+    background: linear-gradient(45deg, rgb(255, 156, 230), rgb(106, 197, 250));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
     text-align: center;
 }
 @media screen and (min-width: 601px) {
@@ -59,7 +61,7 @@ section {
     font-size: 5rem;
     line-height: 3rem;
     border-radius: 2.2rem;
-    box-shadow: 0rem 0.5rem 2rem 0 rgb(171, 238, 255);
+    box-shadow: 0rem 0.5rem 2rem 0 rgb(158, 60, 238);
 }
 #img {
     width: 40rem;
@@ -71,7 +73,7 @@ section {
     width: 1.5rem;
     margin-left: 2.7rem;
 }
-#card-1, #card-2, #card-3 {
+/* #card-1, #card-2, #card-3 {
     box-shadow: 0 0 3rem 1rem rgb(255, 228, 254);
 }
 #card-4, #card-5, #card-6 {
@@ -79,11 +81,11 @@ section {
 }
 #card-7, #card-8, #card-9 {
     box-shadow: 0 0 3rem 1rem rgb(230, 251, 255);
-}
+} */
 span {
     font-size: 3rem;
     color: rgb(53, 56, 64);
-    text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
+    /* text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta; */
 }
 h2 {
     text-align: left;
@@ -102,7 +104,20 @@ h3 {
 /* CSS Animations */
 .flex-box:hover {
     transform: scale(1.15);
+    text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
+    box-shadow: 0 0 3rem 1rem rgb(230, 251, 255);
   }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* JS Animations */
 h1 {
