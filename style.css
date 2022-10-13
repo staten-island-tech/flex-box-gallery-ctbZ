@@ -19,18 +19,17 @@ h1 {
     display:inline-block;
     font-family: 'Press Start 2P', cursive;
     font-size: 4.5vw;
-    line-height: 90rem;
     letter-spacing: 1rem;
     color: #fff;
     text-shadow: 
-    0 0 1rem rgb(192, 185, 185), 
-    0 0 1.5rem rgb(214, 205, 205),
-    0 0 2rem rgb(119, 247, 208), 
-    0 0 3rem rgb(98, 213, 248), 
-    0 0 4rem rgb(0, 217, 255),
-    0 0 5rem rgb(134, 144, 151), 
-    0 0 5rem rgb(52, 195, 252), 
-    0 0 6rem #0fa;
+    0 0 0.5rem rgb(192, 185, 185), 
+    0 0 1rem rgb(214, 205, 205),
+    0 0 1rem rgb(119, 247, 208), 
+    0 0 1.5rem rgb(98, 213, 248), 
+    0 0 2rem rgb(0, 217, 255),
+    0 0 2.5rem rgb(134, 144, 151), 
+    0 0 2.5rem rgb(52, 195, 252), 
+    0 0 3rem #0fa;
 }
 section {
     background-image: url(imgs/bayc.jpg);
@@ -38,10 +37,12 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100rem;
     height: 100rem;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .flex-container {
    width: 100%;
    height: auto;
@@ -109,7 +110,7 @@ h3 {
     text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
   }
 h1:hover {
-    animation: glow 3s ease infinite;
+    animation: glow 7s ease infinite;    
 
 }
 @keyframes gradient {
@@ -124,21 +125,39 @@ h1:hover {
     }
 }
 @keyframes glow {
-    25% {
-        transform: scale(1.1);
-    }
-    42.5% {
-        transform:scale(1.05);
-    }
-    50% {
-        transform: scale(1);
-    }
-    62.5% {
-        transform: scale(0.95);
-    }
-    75% {
-        transform: scale(0.9);
-    }
+   25% {
+       text-shadow:
+       0 0 1rem rgb(192, 185, 185), 
+       0 0 1.5rem rgb(214, 205, 205),
+       0 0 2rem rgb(119, 247, 208), 
+       0 0 3rem rgb(98, 213, 248), 
+       0 0 4rem rgb(0, 217, 255),
+       0 0 5rem rgb(134, 144, 151), 
+       0 0 5rem rgb(52, 195, 252), 
+       0 0 6rem #0fa; ;
+   }
+   50% {
+    text-shadow: 
+    0 0 0.5rem rgb(192, 185, 185), 
+    0 0 1rem rgb(214, 205, 205),
+    0 0 1rem rgb(119, 247, 208), 
+    0 0 1.5rem rgb(98, 213, 248), 
+    0 0 2rem rgb(0, 217, 255),
+    0 0 2.5rem rgb(134, 144, 151), 
+    0 0 2.5rem rgb(52, 195, 252), 
+    0 0 3rem #0fa;
+   }
+   75% {
+    text-shadow: 
+    0 0 1rem rgb(192, 185, 185), 
+    0 0 1.5rem rgb(214, 205, 205),
+    0 0 2rem rgb(119, 247, 208), 
+    0 0 3rem rgb(98, 213, 248), 
+    0 0 4rem rgb(0, 217, 255),
+    0 0 5rem rgb(134, 144, 151), 
+    0 0 5rem rgb(52, 195, 252), 
+    0 0 6rem #0fa;
+   }
 }
 /* JS Animations */
 h1 {
