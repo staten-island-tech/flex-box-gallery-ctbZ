@@ -99,6 +99,9 @@ h3 {
     color: white;
     background-color: #22272e;
 }
+#card-7:hover {
+    box-shadow: gold 0rem 0rem 10rem 0rem;
+}
 .shake:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
