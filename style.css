@@ -95,12 +95,15 @@ h3 {
 .flex-box:hover {
     text-shadow:-0.2rem -0.2rem 0 cyan, 0.2rem 0.2rem 0 magenta;
     box-shadow: 0 0 3rem 1rem rgb(230, 251, 255);
-    box-shadow: red 0rem 0rem 10rem 0rem;
+    box-shadow: red 0rem 0rem 5rem 0rem;
     color: white;
     background-color: #22272e;
+    animation: glow-2 2s infinite;
+    
 }
 #card-7:hover {
-    box-shadow: gold 0rem 0rem 10rem 0rem;
+    box-shadow: gold 0rem 0rem 5rem 0rem;
+    animation: gold-glow 2s infinite;
 }
 .shake:hover {
   animation: shake 0.5s;
@@ -153,6 +156,34 @@ h3 {
     0 0 3.5rem #0fa;
 }
    }
+@keyframes glow-2 {
+    25% {
+    box-shadow: red 0rem 0rem 7rem 0rem;
+    }
+    50% {
+    box-shadow: red 0rem 0rem 10rem 0rem;
+    }
+    75% {
+    box-shadow: red 0rem 0rem 7rem 0rem;
+    }
+    100% {
+    box-shadow: red 0rem 0rem 5rem 0rem;
+    }
+ }
+ @keyframes gold-glow {
+    25% {
+    box-shadow: gold 0rem 0rem 7rem 0rem;
+    }
+    50% {
+    box-shadow: gold 0rem 0rem 10rem 0rem;
+    }
+    75% {
+    box-shadow: gold 0rem 0rem 7rem 0rem;
+    }
+    100% {
+    box-shadow: gold 0rem 0rem 5rem 0rem;
+    }
+ }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
