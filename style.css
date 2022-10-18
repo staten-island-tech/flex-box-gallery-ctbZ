@@ -101,9 +101,25 @@ h3 {
     animation: glow-2 2s infinite;
     
 }
+#card-2:hover {
+    box-shadow: rgb(255, 196, 0) 0rem 0rem 5rem 0rem;
+    animation: gold-glow 2s infinite;
+}
+#card-5:hover {
+    box-shadow: #0fa 0rem 0rem 5rem 0rem;
+    animation: green-glow 2s infinite;
+}
 #card-7:hover {
     box-shadow: gold 0rem 0rem 5rem 0rem;
     animation: gold-glow 2s infinite;
+}
+#card-8:hover {
+    box-shadow: rgb(0, 255, 136) 0rem 0rem 5rem 0rem;
+    animation: 2s infinite;
+}
+#card-9:hover {
+    box-shadow:rgb(0, 255, 136) 0rem 0rem 5rem 0rem;
+    animation: 2s infinite;
 }
 .shake:hover {
   animation: shake 0.5s;
@@ -170,6 +186,20 @@ h3 {
     box-shadow: red 0rem 0rem 5rem 0rem;
     }
  }
+ @keyframes green-glow {
+    25% {
+        box-shadow: rgb(0, 255, 136) 0rem 0rem 7rem 0rem;
+        }
+        50% {
+        box-shadow: rgb(0, 255, 136) 0rem 0rem 10rem 0rem;
+        }
+        75% {
+        box-shadow: rgb(0, 255, 136) 0rem 0rem 7rem 0rem;
+        }
+        100% {
+        box-shadow: rgb(0, 255, 136) 0rem 0rem 5rem 0rem;
+        }
+    }
  @keyframes gold-glow {
     25% {
     box-shadow: gold 0rem 0rem 7rem 0rem;
@@ -186,16 +216,16 @@ h3 {
  }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  30% { transform: translate(2px, 1px) rotate(0deg); }
   40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  50% { transform: translate(-1px, 1px) rotate(-1deg); }
+  60% { transform: translate(-2px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
   80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  90% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -1px) rotate(-1deg); }
 }
 /* Image Swap Hover Effect */
 .swap {
