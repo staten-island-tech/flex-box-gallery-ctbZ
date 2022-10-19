@@ -117,8 +117,11 @@ h3 {
     animation: pulse 2s infinite;
     animation-timing-function: linear;
 }
-#img:hover {
-    animation: blur 3s infinite;
+.blur {
+    transition: 2s ease;
+}
+.blur:hover {
+    -webkit-filter: blur(5px);
 }
 #card-7:hover {
     box-shadow: gold 0rem 0rem 5rem 0rem;
